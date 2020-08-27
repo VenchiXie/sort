@@ -10,18 +10,18 @@ public:
     inline virtual void sort(vector<T>&arr)
     {
         bool isbool=true;
-        for(int i=0;i<arr.size()&&isbool;i++)  /*µ±isboolÎªÕæ£¬ÔòÍË³öÑ­»· */
+        for(int i=0;i<arr.size()&&isbool;i++)  /*å½“isboolä¸ºçœŸï¼Œåˆ™é€€å‡ºå¾ªç¯ */
         {
-            isbool=false;                      /* ³õÊ¼Îªfalse */
+            isbool=false;                      /* åˆå§‹ä¸ºfalse */
             for(int j=0;j<arr.size()-i-1;j++)
             {
                 if(arr[j]>arr[j+1])
 
                     swap(arr[j],arr[j+1]);
-                    isbool=true;               /* µ±ÓĞÊı¾İ½»½Ó£¬isboolÎªtrue */
+                    isbool=true;               /* å½“æœ‰æ•°æ®äº¤æ¥ï¼Œisboolä¸ºtrue */
             }
             
-            cout<<"µÚ"<<i+1<<"ÌËÅÅĞò½á¹û£º";    /* ÇóÅÅĞòµÄ¹ı³Ì */        
+            cout<<"ç¬¬"<<i+1<<"è¶Ÿæ’åºç»“æœï¼š";    /* æ±‚æ’åºçš„è¿‡ç¨‹ */        
             print(arr);
         }
     }
@@ -34,7 +34,7 @@ public:
 //     int arr[]={2,4,15,6,11,100,9,10,0,88, 7,5,11,45,54,12,11,8,12,3,6};
 //     int len=sizeof(arr)/sizeof(int);
 //     vector<int>v(arr,arr+len);
-//     cout<<"Ã°ÅİÅÅĞò"<<endl;
+//     cout<<"å†’æ³¡æ’åº"<<endl;
 //     B.sort(v);
 //     for(int i=0;i<v.size();i++)
 //     {
@@ -42,18 +42,12 @@ public:
 //     }
 // }
 
-
-
-
-
-
-
 /* ****************************************************************** */
 
 // void printarr(int arr[],int size)
 // {
 //     /***************************************************
-//     *Õâ¶Î´úÂëµÄ¹¦ÄÜÊÇÊä³öµÚi+1ÌËµÄ½á¹û£¬µ«»á³öÏÖÏàÍ¬µÄ½á¹û¡£*
+//     *è¿™æ®µä»£ç çš„åŠŸèƒ½æ˜¯è¾“å‡ºç¬¬i+1è¶Ÿçš„ç»“æœï¼Œä½†ä¼šå‡ºç°ç›¸åŒçš„ç»“æœã€‚*
 //     ****************************************************/
 //     for(int i=0;i<size;i++){cout<<arr[i]<<" ";}
 //     cout<<endl;
@@ -70,7 +64,7 @@ public:
 //                 std::swap(arr[j],arr[j+1]);
 //         }
         
-//         cout<<"µÚ"<<i+1<<"ÌËÅÅĞòµÄ½á¹û£º";
+//         cout<<"ç¬¬"<<i+1<<"è¶Ÿæ’åºçš„ç»“æœï¼š";
 //         printarr(arr,size);
 //     }
 
@@ -100,7 +94,7 @@ int main()
     
     // for(vector<char>::iterator it=arr2.begin();it!=arr2.end();it++)
     // {
-    //     cout<<*it<<"¡¡";
+    //     cout<<*it<<"ã€€";
     // }
     
     system("pause");
